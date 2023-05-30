@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="topContainer">
+        <div class="title">Enter the value</div>
+        <div class="inputContainer">
+          <input
+            type="number"
+            id="temperature"
+            placeholder="0.00"
+            required
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">Type :</div>
+        <div class="inputContainer">
+
+          <input type="radio" id="celsius" name="conversion" value="celsius" checked>
+         <label for="celsius">Celsius</label><br>
+         <input type="radio" id="fahrenheit" name="conversion" value="fahrenheit" checked>
+         <label for="fahrenheit">Fahrenheit</label><br>
+
+        </div>
+      </div>
+
+      <button class="btn" onclick="convertTemperature()">Submit</button>
+
+      <div class="container" id="bottom">
+        <div class="totalContainer">
+          <div class="title">Result</div>
+          <div class="output-section">
+            <p id="result"></p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
