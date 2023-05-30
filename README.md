@@ -1,1 +1,3 @@
-# OIBSIP-Level-1-Task-2
+Temperature Converter 
+
+created a temperature converter using HTML, CSS and JavaScript as a part of my Internship journey at Oasis Infobyte
